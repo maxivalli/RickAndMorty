@@ -1,0 +1,49 @@
+.about {
+    display: grid;
+}
+
+.about h3 {
+    font-family: Get Schwifty;
+    font-size: 54px;
+    color: #00ddff;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about img {
+    margin-top: 20px;
+    border: 5px solid violet;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.texto {
+    justify-self: center;
+    width: 300px;
+    height: 430px;
+    background-color: rgb(45,45,45);
+    border-radius: 10px;
+    border-width: 10px;
+    box-shadow: 0px -1px 20px rgb(157, 0, 255);
+    transition: 0.2s;
+    border: 1px solid rgb(157, 0, 255);
+}
+
+.texto:hover {
+   transform: scale(1.1);
+   box-shadow: 0px -1px 50px rgb(157, 0, 255);
+   border: 2px solid rgb(157, 0, 255);
+   rotate: -5deg;
+}
+
+.texto h4 {
+    font-size: 14px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.texto h2 {
+    color: #9c6aff;
+}
+

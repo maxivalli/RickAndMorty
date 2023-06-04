@@ -1,0 +1,20 @@
+/* Establece estilos para el archivo App.js */
+
+.App {
+   text-align: center;
+   color: aliceblue;
+}
+
+.App h1 {
+   color: #00ddff;
+   -webkit-text-stroke: 1px greenyellow;
+   font-size: 75px;
+   font-family: Get Schwifty;
+   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+ 
+ 
