@@ -1,0 +1,76 @@
+.login {
+    display: grid;
+    background-image: url('../../Assets/rick-et-morty.gif');
+    background-size:cover;
+}
+
+.login h1 {
+    cursor: default;
+}
+
+.container {
+    padding-top: 50px;
+    margin-bottom: 335px;
+    width: 300px;
+    height: 380px;
+    background-color: rgb(45,45,45);
+    border-radius: 15px;
+    justify-self: center;
+    box-shadow: 0px -1px 20px rgb(157, 0, 255);
+    transition: 0.3s;
+    border: 1px solid rgb(157, 0, 255);
+}
+
+.container:hover {
+    box-shadow: 0px -1px 50px rgb(157, 0, 255);
+    scale: 1.1;
+}
+
+.container span {
+    color: blueviolet;
+    font-size: 36px;
+    cursor: default;
+}
+
+.container form {
+    margin-top: 50px;
+}
+
+.container input {
+    opacity: 100%;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.container button {
+    
+    background-color: violet;
+    border: 0;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    scale: 0.95;
+    box-shadow: 0px 1px 15px violet;
+}
+
+.container .mail {
+    color: rgb(215, 215, 215);
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.container .password {
+    color: rgb(215, 215, 215);
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.alert {
+    color: red;
+}
+  

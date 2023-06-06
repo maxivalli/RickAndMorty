@@ -1,5 +1,3 @@
-/* Proporciona estilos al archivo index.html que está en la carpeta public. Se establecen fuentes, imagen de fondo para el body. */
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,9 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./Assets/background.jpeg");
-  background-size:auto;
-  background-position:top;
+  background-image: url('./Assets/BackG.jpeg');
+  background-size:inherit;
+  background-position: center;
 }
 
 code {

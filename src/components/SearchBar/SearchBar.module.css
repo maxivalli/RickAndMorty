@@ -41,3 +41,21 @@
     rotate: 180deg;
 }
 
+@media (max-width: 760px) {
+    .searchBar {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+
+    .searchBar input {
+        width: 200px;
+    }
+
+    .searchBar button {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+

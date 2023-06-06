@@ -1,5 +1,7 @@
-/* Establece estilos para el archivo App.js */
-
+@font-face {
+   font-family: Get Schwifty;
+   src: url(../../../../../../Users/maxivalli/Library/Fonts/get_schwifty.ttf);
+}
 .App {
    text-align: center;
    color: aliceblue;
@@ -11,7 +13,30 @@
    font-size: 75px;
    font-family: Get Schwifty;
    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+   animation: grow 0.7s forwards;
 }
+
+@media (max-width: 760px) {
+   .App {
+      margin-bottom: 50px;
+   }
+   
+   .App h1 {
+      font-size: 40px;
+   }
+}
+
+@keyframes grow {
+   0% {
+     transform: scale(0);
+   }
+   100% {
+     transform: scale(1);
+   }
+}
+
+
+
 
 
 

@@ -1,5 +1,3 @@
-/* (4) Se importa el elemento Card y los estilos. Se renderiza un contenedor que contiene multiples Card.  */
-
 import Card from '../Card/Card';
 import style from './Cards.module.css';
 

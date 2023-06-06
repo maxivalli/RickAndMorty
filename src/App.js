@@ -1,15 +1,16 @@
-/* (2) Se importan los componentes, modulos css y funciones necesarios. Define el componente App, que contiene un estado para los personajes, 
-funciones para filtrar y buscar personajes utilizando la API de Rick and Morty, y retorna una estructura de elementos JSX que incluye 
-un encabezado, una lista de tarjetas de personajes y enrutamiento para las páginas de inicio, sobre y detalles. */
-
 import './App.css';
+
+import React from 'react';
+import { Route, Routes, Outlet } from 'react-router-dom';
 import { useState } from 'react';
+
 import axios from "axios";
-import { Route, Routes } from 'react-router-dom';
+
 import About from './Views/About/About';
 import Detail from './Views/Detail/Detail'
 import Cards from './components/Cards/Cards.jsx';
 import Nav from './components/Nav/Nav.jsx';
+import Login from './Views/Login/Login'
 
 function App() {
    const [characters, setCharacters] = useState([]);
@@ -34,7 +35,7 @@ function App() {
       axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
          if (data.name) {
             setCharacters((oldChars) => [...oldChars, data]);
-            /* setLoadedIds((oldIds) => [...oldIds, id]); */
+
          } else {
             window.alert('¡Debe ingresar un ID!');
          }
@@ -47,15 +48,29 @@ function App() {
 
    return (
       <div className='App'>
-         <Nav onSearch={onSearch}></Nav>
          <Routes>
-            <Route path='/home' element={<>
-               <h1>Rick and Morty</h1>
-               <Cards characters={characters} onClose={onClose}></Cards>
-            </>} />
-            <Route path='/about' element={<About />}></Route>
-            <Route path='/detail/:detailId' element={<Detail />}></Route>
+            <Route path='/' element={<Login />}></Route>
+            <Route path='/home' element={
+               <React.Fragment>
+                  <Nav onSearch={onSearch}></Nav>
+                  <h1>Rick and Morty</h1>
+                  <Cards characters={characters} onClose={onClose}></Cards>
+               </React.Fragment>
+            } />
+            <Route path='/about' element={
+               <React.Fragment>
+                  <Nav onSearch={onSearch}></Nav>
+                  <About />
+               </React.Fragment>
+            }></Route>
+            <Route path='/detail/:detailId' element={
+               <React.Fragment>
+                  <Nav onSearch={onSearch}></Nav>
+                  <Detail />
+               </React.Fragment>
+            }></Route>
          </Routes>
+         <Outlet />
       </div>
    );
 }
