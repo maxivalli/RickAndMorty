@@ -16,22 +16,22 @@
    animation: grow 0.7s forwards;
 }
 
-@media (max-width: 760px) {
-   .App {
-      margin-bottom: 50px;
-   }
-   
-   .App h1 {
-      font-size: 40px;
-   }
-}
-
 @keyframes grow {
    0% {
      transform: scale(0);
    }
    100% {
      transform: scale(1);
+   }
+}
+
+@media (max-width: 760px) {
+   .App {
+      margin-bottom: 50px;
+   }
+   
+   .App h1 {
+      font-size: 48px;
    }
 }
 

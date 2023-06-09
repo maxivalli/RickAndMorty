@@ -11,6 +11,7 @@ import Detail from './Views/Detail/Detail'
 import Cards from './components/Cards/Cards.jsx';
 import Nav from './components/Nav/Nav.jsx';
 import Login from './Views/Login/Login'
+import NotFound from './components/NotFound/NotFound'
 
 function App() {
    const [characters, setCharacters] = useState([]);
@@ -69,6 +70,7 @@ function App() {
                   <Detail />
                </React.Fragment>
             }></Route>
+            <Route path='*' element={<NotFound />} />
          </Routes>
          <Outlet />
       </div>

@@ -12,7 +12,7 @@ export default function SearchBar( {onSearch} ) {
          type='search' 
          onChange={handleChange} 
          value={id}
-         placeholder="Ingresa un ID..."/>
+         placeholder="Busca un personaje por su ID..."/>
          <button onClick={() => {onSearch(id); setId("")}} title="Agregar">
             <i className="fa fa-plus"></i>
          </button>
