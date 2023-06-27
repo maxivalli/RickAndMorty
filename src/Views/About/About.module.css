@@ -2,63 +2,50 @@
     display: grid;
 }
 
-.about h3 {
+.about h2 {
     font-family: Get Schwifty;
     font-size: 54px;
     color: #00ddff;
+    -webkit-text-stroke: 1px greenyellow;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
-.about img {
-    margin-top: 20px;
-    border: 5px solid violet;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-.texto {
+.container {
     justify-self: center;
     width: 300px;
     height: 430px;
     background-color: rgb(45,45,45);
     border-radius: 20px;
     border-width: 10px;
-    box-shadow: 0px -1px 20px rgb(157, 0, 255);
+    box-shadow: 0px -1px 20px blueviolet;
     transition: 0.2s;
-    border: 1px solid rgb(157, 0, 255);
+    border: 1px solid blueviolet;
 }
 
-.texto:hover {
-    margin-top: -40px;
-   transform: scale(1.3);
-   box-shadow: 0px -1px 50px rgb(157, 0, 255);
-   rotate: -5deg;
+.container img {
+    margin-top: 30px;
+    border: 5px solid blueviolet;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
-.texto h4 {
+.container h3 {
+    color: aqua;
+}
+
+.container h4 {
     font-size: 14px;
-    text-align: justify;
-    margin-left: 30px;
-    margin-right: 30px;
+
 }
 
-.texto h2 {
-    color: #9c6aff;
-}
-
-@media (max-width: 760px) {
+@media (max-width: 850px) {
     .about {
-        margin-bottom: 100px;
-    }
-    .about h3 {
-        font-size: 40px;
-        margin-bottom: 50px;
+        display: grid;
     }
 
-    .texto {
-        width: 250px;
-        height: 470px;
+    .about h2 {
+        font-size: 40px;
     }
 }
 

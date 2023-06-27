@@ -10,7 +10,7 @@ export const Rick = {
    },
    image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
 };
-// eslint-disable-next-line
+
 export default [
    {
       id: 1,

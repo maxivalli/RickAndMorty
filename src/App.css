@@ -5,15 +5,29 @@
 .App {
    text-align: center;
    color: aliceblue;
+   display: grid;
 }
 
 .App h1 {
-   color: #00ddff;
-   -webkit-text-stroke: 1px greenyellow;
-   font-size: 75px;
+   display: grid;
+   margin-top: -20px;
+   margin-bottom: -5px;
+   padding-left: 20px;
+   padding-top: 15px;
+   height: 270px;
+   align-content: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   color: blueviolet;
+   -webkit-text-stroke: 0.5px violet;
+   font-size: 65px;
    font-family: Get Schwifty;
-   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+   text-shadow: 0px 10px 10px black;
    animation: grow 0.7s forwards;
+   background-image: url(./Assets/portal-rick-and-morty.gif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 200px;
 }
 
 @keyframes grow {
@@ -25,15 +39,12 @@
    }
 }
 
-@media (max-width: 760px) {
-   .App {
-      margin-bottom: 50px;
-   }
-   
+@media (max-width: 850px) {
    .App h1 {
-      font-size: 48px;
+      font-size: 50px;
    }
 }
+
 
 
 

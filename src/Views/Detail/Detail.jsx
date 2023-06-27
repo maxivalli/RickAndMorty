@@ -21,17 +21,15 @@ const Detail = () => {
   return (
     <div className={style.detail}>
       <div>
-        <h2>detalle</h2>
+        <h2>informacion</h2>
       </div>
       <div className={style.container}>
         <img src={character.image} alt=''></img>
-        <div className={style.text}>
         <h3>Name: {character.name && character.name}</h3>
         <h4>Gender: {character.gender}</h4>
         <h4>Status: {character.status && character.status}</h4>
         <h4>Species: {character.species && character.species}</h4>
         <h4>Origin: {character.origin?.name}</h4>
-        </div>
       </div>
     </div>
   );

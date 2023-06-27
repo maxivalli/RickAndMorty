@@ -6,78 +6,51 @@
     font-family: Get Schwifty;
     font-size: 54px;
     color: #00ddff;
+    -webkit-text-stroke: 1px greenyellow;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .container {
-    display: flex;
     justify-self: center;
-    justify-content:space-around;
-    columns: 2;
-    width: 50%;
-    height: 400px;
-    background-color: rgb(45, 45, 45);
+    width: 300px;
+    height: 430px;
+    background-color: rgb(45,45,45);
     border-radius: 20px;
-    box-shadow: 0px -1px 50px rgb(157, 0, 255);
-}
-
-.text {
-    align-self: center;
-}
-
-.text h3 {
-    margin-right: 20px;
-    font-size: 28px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    color: #9c6aff;
-    text-shadow: none;
-}
-
-.text h4 {
-    font-size: 20px;
-    margin-right: 20px;
+    border-width: 10px;
+    box-shadow: 0px -1px 20px blueviolet;
+    transition: 0.2s;
+    border: 1px solid blueviolet;
 }
 
 .container img {
-    margin-left: 20px;
-    align-self: center;
-    width: 250px;
-    height: 250px;
+    margin-top: 30px;
+    border: 5px solid blueviolet;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 5px solid violet;
 }
 
-@media (max-width: 950px) {
+.container h3 {
+    color: aqua;   
+}
+
+.container h4 {
+    font-size: 16px;
+}
+
+
+
+@media (max-width: 850px) {
+    
+    .detail {
+        display: grid;
+    }
+     
     .detail h2 {
         font-size: 40px;
     }
-    .container {
-        width: 80%;
-        display:flex;
-        flex-direction: column;
-        padding-top: 50px;
-        padding-bottom: 100px;
-        margin-bottom: 30px;
-    }
 
-    .container img {
-        width: 150px;
-        height: 150px;
-        margin-top: 30px;
-        margin-right: 20px;
-    }
 
-    .container h3 {
-        font-size: 20px;
-        margin-left: 20px;
-    }
-
-    .container h4 {
-        font-size: 14px;
-        margin-left: 20px;
-    }
 }
 
 

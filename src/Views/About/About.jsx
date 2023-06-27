@@ -4,10 +4,10 @@ import foto from '../../Assets/perfil.png';
 export default function About() {
     return (
         <div className={style.about}>
-            <h3>Un poco sobre mi</h3>
-            <div className={style.texto}>
+            <h2>Un poco sobre mi</h2>
+            <div className={style.container}>
             <img src={foto} alt="Descripción de la imagen" />
-                <h2>Maxi Valli</h2>
+                <h3>Maxi Valli</h3>
                 <h4>
                     Tengo 38 años y soy de la provincia de Santa Fe,<br>
                 </br>

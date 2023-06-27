@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Nav ({ onSearch }) {
     return (
         <nav className={style.navbar}>
+            <h2>WELCOME!</h2>
             <SearchBar onSearch={onSearch}/>
             <Link to='/home'>
                 <h3>HOME</h3>
