@@ -1,8 +1,8 @@
-.about {
+.main {
     display: grid;
 }
 
-.about h2 {
+.main h2 {
     font-family: Get Schwifty;
     font-size: 54px;
     color: #00ddff;
@@ -40,11 +40,11 @@
 }
 
 @media (max-width: 850px) {
-    .about {
+    .main {
         display: grid;
     }
 
-    .about h2 {
+    .main h2 {
         font-size: 40px;
     }
 }

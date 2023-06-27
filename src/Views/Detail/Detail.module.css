@@ -1,8 +1,8 @@
-.detail {
+.main {
     display: grid;
 }
 
-.detail h2 {
+.main h2 {
     font-family: Get Schwifty;
     font-size: 54px;
     color: #00ddff;
@@ -42,11 +42,11 @@
 
 @media (max-width: 850px) {
     
-    .detail {
+    .main {
         display: grid;
     }
      
-    .detail h2 {
+    .main h2 {
         font-size: 40px;
     }
 

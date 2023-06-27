@@ -3,7 +3,7 @@ import foto from '../../Assets/perfil.png';
 
 export default function About() {
     return (
-        <div className={style.about}>
+        <div className={style.main}>
             <h2>Un poco sobre mi</h2>
             <div className={style.container}>
             <img src={foto} alt="Descripción de la imagen" />

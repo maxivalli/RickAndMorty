@@ -19,7 +19,7 @@ const Detail = () => {
   }, [detailId]);
 
   return (
-    <div className={style.detail}>
+    <div className={style.main}>
       <div>
         <h2>informacion</h2>
       </div>
