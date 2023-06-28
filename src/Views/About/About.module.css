@@ -1,51 +1,49 @@
 .main {
-    display: grid;
+  display: grid;
 }
 
 .main h2 {
-    font-family: Get Schwifty;
-    font-size: 54px;
-    color: #00ddff;
-    -webkit-text-stroke: 1px greenyellow;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  font-family: Get Schwifty;
+  font-size: 54px;
+  color: #00ddff;
+  -webkit-text-stroke: 1px greenyellow;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .container {
-    justify-self: center;
-    width: 300px;
-    height: 430px;
-    background-color: rgb(45,45,45);
-    border-radius: 20px;
-    border-width: 10px;
-    box-shadow: 0px -1px 20px blueviolet;
-    transition: 0.2s;
-    border: 1px solid blueviolet;
+  justify-self: center;
+  width: 300px;
+  height: 430px;
+  background-color: rgb(45, 45, 45);
+  border-radius: 20px;
+  border-width: 10px;
+  box-shadow: 0px -1px 20px blueviolet;
+  transition: 0.2s;
+  border: 1px solid blueviolet;
 }
 
 .container img {
-    margin-top: 30px;
-    border: 5px solid blueviolet;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+  margin-top: 30px;
+  border: 5px solid blueviolet;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 .container h3 {
-    color: aqua;
+  color: aqua;
 }
 
 .container h4 {
-    font-size: 14px;
-
+  font-size: 14px;
 }
 
 @media (max-width: 850px) {
-    .main {
-        display: grid;
-    }
+  .main {
+    display: grid;
+  }
 
-    .main h2 {
-        font-size: 40px;
-    }
+  .main h2 {
+    font-size: 40px;
+  }
 }
-

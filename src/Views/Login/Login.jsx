@@ -1,7 +1,7 @@
-import style from '../Login/Login.module.css';
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { validar } from './Validar';
+import style from "../Login/Login.module.css";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { validar } from "./Validar";
 
 function UserData() {
   const navigate = useNavigate();
@@ -24,13 +24,15 @@ function UserData() {
     const { name, value } = event.target;
     setInputs((prevInputs) => ({
       ...prevInputs,
-      [name]: value
+      [name]: value,
     }));
 
-    setErrors(validar({
-      ...inputs,
-      [name]: value
-    }));
+    setErrors(
+      validar({
+        ...inputs,
+        [name]: value,
+      })
+    );
   }
 
   function submitHandler(event) {
@@ -53,7 +55,7 @@ function UserData() {
 
   useEffect(() => {
     if (access) {
-      navigate('/home');
+      navigate("/home");
     }
   }, [access, navigate]);
 
@@ -64,28 +66,34 @@ function UserData() {
         <span>Inicia sesión</span>
         <form onSubmit={submitHandler}>
           <input
-            type='text'
+            type="text"
             placeholder="Ingresa tu email"
             value={inputs.email}
-            name='email'
+            name="email"
             onChange={handleChange}
           />
           <h5 className={style.mail}>{errors.email}</h5>
-          <br /><br />
+          <br />
+          <br />
           <input
-            type='password'
+            type="password"
             placeholder="Ingresa tu contraseña"
             value={inputs.password}
-            name='password'
+            name="password"
             onChange={handleChange}
           />
           <h5 className={style.password}>{errors.password}</h5>
-          <br /><br />
+          <br />
+          <br />
 
           {Object.keys(errors).length === 0 && (
-            <button type='submit'>Ingresa</button>
+            <button type="submit">Ingresa</button>
           )}
-          {showAlert && <h5 className={style.alert}>Credenciales incorrectas. Inténtalo nuevamente.</h5>}
+          {showAlert && (
+            <h5 className={style.alert}>
+              Credenciales incorrectas. Inténtalo nuevamente.
+            </h5>
+          )}
         </form>
       </div>
     </div>

@@ -1,21 +1,28 @@
-import style from "./SearchBar.module.css"
+import style from "./SearchBar.module.css";
 import { useState } from "react";
 
-export default function SearchBar( {onSearch} ) {
-   const [id, setId] = useState("");
-   const handleChange = (event) => {
-      setId(event.target.value)
-   }
-   return (
-      <div className={style.searchBar}>
-         <input 
-         type='search' 
-         onChange={handleChange} 
-         value={id}
-         placeholder="Busca un personaje por su ID..."/>
-         <button onClick={() => {onSearch(id); setId("")}} title="Agregar">
-            <i className="fa fa-plus"></i>
-         </button>
-      </div>
-   );
+export default function SearchBar({ onSearch }) {
+  const [id, setId] = useState("");
+  const handleChange = (event) => {
+    setId(event.target.value);
+  };
+  return (
+    <div className={style.searchBar}>
+      <input
+        type="search"
+        onChange={handleChange}
+        value={id}
+        placeholder="Busca un personaje por su ID..."
+      />
+      <button
+        onClick={() => {
+          onSearch(id);
+          setId("");
+        }}
+        title="Agregar"
+      >
+        <i className="fa fa-plus"></i>
+      </button>
+    </div>
+  );
 }
